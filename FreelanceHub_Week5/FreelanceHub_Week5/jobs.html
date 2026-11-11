@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Find Jobs | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head><body>
+<header class="navbar"><div class="container nav-container">
+<a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="freelancers.html">Find Freelancers</a>
+<a href="jobs.html">Find Jobs</a><a href="profile.html">My Profile</a>
+<a href="my-services.html">My Services</a><a href="my-proposals.html">My Proposals</a><a href="orders.html">My Orders</a>
+<a href="post-job.html" class="btn btn-primary">＋ Post a Job</a>
+</nav><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+</div></header>
+<main class="page-wrap">
+<div class="page-heading"><div><p class="eyebrow">Explore opportunities</p><h1>Find your next project</h1><p class="muted">Discover freelance jobs posted by clients and send a proposal.</p></div><a class="btn btn-primary" href="post-job.html">＋ Post a Job</a></div>
+<section class="panel job-search-panel"><div class="job-filter-grid">
+<div class="field"><label for="jobSearch">Search jobs</label><input id="jobSearch" type="search" placeholder="Search by title, skill or keyword"></div>
+<div class="field"><label for="jobCategory">Category</label><select id="jobCategory"><option value="">All categories</option><option>Web Development</option><option>UI/UX Design</option><option>Graphic Design</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Writing & Translation</option><option>Data Analysis</option></select></div>
+<div class="field"><label for="jobSort">Sort by</label><select id="jobSort"><option value="newest">Newest first</option><option value="budget-high">Budget: high to low</option><option value="budget-low">Budget: low to high</option></select></div>
+</div><p class="help-text" id="jobResultsCount" style="margin-top:12px">Showing available jobs</p></section>
+<div id="jobListings" class="job-list"></div>
+</main>
+<footer class="footer"><div class="container footer-content">
+<div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div>
+<div class="footer-links"><h4>Marketplace</h4><a href="jobs.html">Find Jobs</a><a href="post-job.html">Post a Job</a><a href="my-proposals.html">My Proposals</a><a href="orders.html">My Orders</a></div>
+<div class="footer-social"><h4>Account</h4><a href="profile.html">My Profile</a><a href="my-services.html">My Services</a></div>
+</div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 4 learning project.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><script src="freelance.js"></script>
+</body></html>

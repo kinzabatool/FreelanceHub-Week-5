@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Submit Proposal | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head><body>
+<header class="navbar"><div class="container nav-container">
+<a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="freelancers.html">Find Freelancers</a>
+<a href="jobs.html">Find Jobs</a><a href="profile.html">My Profile</a>
+<a href="my-services.html">My Services</a><a href="my-proposals.html">My Proposals</a><a href="orders.html">My Orders</a>
+<a href="post-job.html" class="btn btn-primary">＋ Post a Job</a>
+</nav><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+</div></header>
+<main class="page-wrap">
+<div class="page-heading"><div><p class="eyebrow">Apply for a project</p><h1>Submit a Proposal</h1><p class="muted">Introduce yourself and explain how you will complete this project.</p></div><a class="btn btn-outline" href="jobs.html">← Find Jobs</a></div>
+<div id="proposalJobSummary" class="notice" style="display:none"></div>
+<form class="panel" id="proposalForm" novalidate><div id="proposalFormMessage"></div><input type="hidden" id="proposalJobId">
+<div class="form-grid">
+<div class="field full"><label for="coverLetter">Cover letter *</label><textarea id="coverLetter" required minlength="40" maxlength="2000" placeholder="Hello! I am interested in your project because... Describe your relevant experience and approach."></textarea><span class="help-text">At least 40 characters.</span></div>
+<div class="field"><label for="proposalPrice">Your proposed price (PKR) *</label><input id="proposalPrice" type="number" min="500" max="10000000" required placeholder="20000"></div>
+<div class="field"><label for="proposalDelivery">Delivery time *</label><select id="proposalDelivery" required><option value="">Choose delivery time</option><option>1–3 days</option><option>1 week</option><option>2 weeks</option><option>3–4 weeks</option><option>1–2 months</option><option>More than 2 months</option></select></div>
+<div class="field full"><label for="proposalSkills">Relevant skills / experience *</label><input id="proposalSkills" required placeholder="React, responsive design, API integration"></div>
+</div><div class="form-actions"><button class="btn btn-primary" type="submit">Send Proposal</button><a class="btn btn-outline" href="jobs.html">Cancel</a></div></form>
+</main>
+<footer class="footer"><div class="container footer-content">
+<div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div>
+<div class="footer-links"><h4>Marketplace</h4><a href="jobs.html">Find Jobs</a><a href="post-job.html">Post a Job</a><a href="my-proposals.html">My Proposals</a><a href="orders.html">My Orders</a></div>
+<div class="footer-social"><h4>Account</h4><a href="profile.html">My Profile</a><a href="my-services.html">My Services</a></div>
+</div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 4 learning project.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><script src="freelance.js"></script>
+</body></html>
